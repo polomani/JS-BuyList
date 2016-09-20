@@ -15,7 +15,6 @@ body {
     background-color: white;
     width: 400px;
     border-radius: 10px;
-    padding-right: 10px;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.40),0 2px 10px 0 rgba(34,36,38,.30);
 }
 
@@ -41,7 +40,7 @@ body {
 
 #addDiv {
     position: absolute;
-    width: 385px;
+    width: 90%;
     height: 35px;
     right: 0;
     left: 0;
@@ -129,6 +128,7 @@ body {
 
 .sticker:hover {
     transform: translateY(-100px);
+    background-color: mediumvioletred;
 }
 
 .buy {
@@ -146,6 +146,22 @@ body {
         background-color: white;
         color: black;
         border: 3px solid black;
+        transform: translateY(-100px);
+        background-color: mediumvioletred;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        margin-top: 10px;
+        float: left;
+        width: 100%;
     }
 }
 
@@ -180,14 +196,16 @@ button:hover::before {
 
 .to-buy-items {
     margin-top: 65px;
-    width: 410px;
+    width: 100%;
 }
 
 .to-buy-item {
     display: inline-block;
     padding: 10px;
+    padding-right: 10px;
     margin: 0 auto;
-    width: 390px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .item-name {
@@ -198,6 +216,7 @@ button:hover::before {
 
 .buttons {
     float: right;
+    padding-right: 0;
 }
 
 hr {
