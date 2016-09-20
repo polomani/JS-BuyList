@@ -8,6 +8,71 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-<h1>Hello World</h1>
+    <div class="container"> 
+        <div class="left">
+            <div id="addDiv"><input id="addField" placeholder="Назва товару" type="text"/>
+            <button id="add" data-tooltip="Add"> Додати </button></div>
+            <div class="to-buy-items">
+                <hr />
+                <div class="to-buy-item"><span class="item-name">Помідори</span>
+                    <div class="buttons">
+                        <button data-tooltip="Remove" class="btn-remove">–</button>
+                        <span class="counter"><span>1</span></span>
+                        <button class="btn-add" data-tooltip="Add">+</button>
+                        <button class="btn-bought" data-tooltip="Куплено">Куплено</button>
+                        <button class="btn-delete" data-tooltip="Видалити">х</button>
+                    </div>
+                </div>
+                <hr />
+                <div class="to-buy-item"><span>Банани</span>
+                    <div class="buttons">
+                        <button data-tooltip="Remove" class="btn-remove">–</button>
+                        <span class="counter"><span>5</span></span>
+                        <button class="btn-add" data-tooltip="Add">+</button>
+                        <button class="btn-bought" data-tooltip="Куплено">Куплено</button>
+                        <button class="btn-delete" data-tooltip="Видалити">х</button>
+                    </div>
+                </div>
+                <hr />
+                <div class="to-buy-item"><span>Травинки</span>
+                    <div class="buttons">
+                        <button data-tooltip="Remove" class="btn-remove">–</button>
+                        <span class="counter"><span>3</span></span>
+                        <button class="btn-add" data-tooltip="Add">+</button>
+                        <button class="btn-bought" data-tooltip="Куплено">Куплено</button>
+                        <button class="btn-delete" data-tooltip="Видалити">х</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <span id="items-left">Залишилося</span>
+            <hr />
+            <div id="items-left-div">
+                <span class="in-store">Помідори <span class="number">2</span></span>
+                <span class="in-store">Банани <span class="number">228</span></span>
+                <span class="in-store">Травинки <span class="number">420</span></span>
+            </div>
+            <hr />
+            <span id="items-sold">Куплено</span>
+            <hr />
+            <div id="items-sold-div">
+                <span class="sold">Помідори <span class="number">2</span></span>
+                <span class="sold">Банани <span class="number">1488</span></span>
+                <span class="sold">Травинки <span class="number">69</span></span>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="sticker">
+        <div class="buy">
+        Buy list
+        </div>
+        <div class="name">
+        Made by <br /> Ivan Polomanyi
+        </div>
+    </div>
+
 </body>
 </html>
