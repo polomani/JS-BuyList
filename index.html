@@ -6,6 +6,33 @@
 
 
     <link rel="stylesheet" type="text/css" href="main.css" />
+    
+    <div class="row-template" style="display:none">
+        <hr />
+        <div class="to-buy-item state-not-bought no-edit">
+            <span class="item-name">Помідори</span>
+            <input class="new-item-name" type="text" placeholder="Нова назва"/>
+            <div style="position:relative;"><div class="buttons">
+                <button data-tooltip="Remove" class="btn-remove" disabled="">–</button>
+                <span class="counter"><span class="counter-label">1</span></span>
+                <button class="btn-add" data-tooltip="Add">+</button>
+                <button class="btn-bought" data-tooltip="Не куплено">Не куплено</button>
+                <button class="btn-unbought" data-tooltip="Куплено">Куплено</button>
+                <button class="btn-delete" data-tooltip="Видалити">х</button>
+            </div></div>
+        </div>
+    </div>
+    
+    <div class="label-in-store-template" style="display:none">
+        <span class="in-store state-not-bought"><span class="label-name"></span> <span class="number">1</span></span>
+    </div>
+    
+    <div class="label-sold-template" style="display:none">
+        <span class="sold state-not-bought"><span class="label-name"></span> <span class="number">1</span></span>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="container"> 
@@ -13,53 +40,17 @@
             <div id="addDiv"><input id="addField" placeholder="Назва товару" type="text"/>
             <button id="add" data-tooltip="Add"> Додати </button></div>
             <div class="to-buy-items">
-                <hr />
-                <div class="to-buy-item"><span class="item-name">Помідори</span>
-                    <div class="buttons">
-                        <button data-tooltip="Remove" class="btn-remove">–</button>
-                        <span class="counter"><span>1</span></span>
-                        <button class="btn-add" data-tooltip="Add">+</button>
-                        <button class="btn-bought" data-tooltip="Куплено">Куплено</button>
-                        <button class="btn-delete" data-tooltip="Видалити">х</button>
-                    </div>
-                </div>
-                <hr />
-                <div class="to-buy-item"><span>Банани</span>
-                    <div class="buttons">
-                        <button data-tooltip="Remove" class="btn-remove">–</button>
-                        <span class="counter"><span>5</span></span>
-                        <button class="btn-add" data-tooltip="Add">+</button>
-                        <button class="btn-bought" data-tooltip="Куплено">Куплено</button>
-                        <button class="btn-delete" data-tooltip="Видалити">х</button>
-                    </div>
-                </div>
-                <hr />
-                <div class="to-buy-item"><span>Травинки</span>
-                    <div class="buttons">
-                        <button data-tooltip="Remove" class="btn-remove">–</button>
-                        <span class="counter"><span>3</span></span>
-                        <button class="btn-add" data-tooltip="Add">+</button>
-                        <button class="btn-bought" data-tooltip="Куплено">Куплено</button>
-                        <button class="btn-delete" data-tooltip="Видалити">х</button>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="right">
             <span id="items-left">Залишилося</span>
             <hr />
             <div id="items-left-div">
-                <span class="in-store">Помідори <span class="number">2</span></span>
-                <span class="in-store">Банани <span class="number">228</span></span>
-                <span class="in-store">Травинки <span class="number">420</span></span>
             </div>
             <hr />
             <span id="items-sold">Куплено</span>
             <hr />
             <div id="items-sold-div">
-                <span class="sold">Помідори <span class="number">2</span></span>
-                <span class="sold">Банани <span class="number">1488</span></span>
-                <span class="sold">Травинки <span class="number">69</span></span>
             </div>
         </div>
     </div>
